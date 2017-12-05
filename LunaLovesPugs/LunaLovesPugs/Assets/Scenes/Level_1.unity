@@ -326,52 +326,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ef3ba0f9192bdaa4cad15405814db719, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &496014525
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 496014527}
-  - component: {fileID: 496014526}
-  m_Layer: 0
-  m_Name: SpawnObstacles
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &496014526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 496014525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a4448378d4546a4bb79f84a3b9fb85c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxObjects: 15
-  bush: {fileID: 1395013424303286, guid: 3fa35a6f4b32963439592ce0db6bda3a, type: 2}
-  wood_spikes: {fileID: 1799650511084678, guid: 01b8c7dcb68192141b7e92019854e291,
-    type: 2}
-  stone: {fileID: 1834733215619516, guid: 5f28cc081cfbb0645b466fd1dcde7b84, type: 2}
-  tree: {fileID: 1743072671437392, guid: 3a755fe862f8dc6409997495540fbed6, type: 2}
---- !u!4 &496014527
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 496014525}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.187616, y: 0.84006476, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 21
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &516419494
 Prefab:
   m_ObjectHideFlags: 0
@@ -422,6 +376,63 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cbdec36d84de1485b9ac96b8f52d42c7, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &572004116
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 572004118}
+  - component: {fileID: 572004117}
+  - component: {fileID: 572004119}
+  m_Layer: 10
+  m_Name: SpawnObstacles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &572004117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 572004116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a4448378d4546a4bb79f84a3b9fb85c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxObjects: 15
+  bush: {fileID: 1395013424303286, guid: 3fa35a6f4b32963439592ce0db6bda3a, type: 2}
+  wood_spikes: {fileID: 1799650511084678, guid: 01b8c7dcb68192141b7e92019854e291,
+    type: 2}
+  tree: {fileID: 1743072671437392, guid: 3a755fe862f8dc6409997495540fbed6, type: 2}
+  stone: {fileID: 1834733215619516, guid: 5f28cc081cfbb0645b466fd1dcde7b84, type: 2}
+--- !u!4 &572004118
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 572004116}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!210 &572004119
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 572004116}
+  m_Enabled: 1
+  m_SortingLayerID: -1818470193
+  m_SortingLayer: 4
+  m_SortingOrder: 0
 --- !u!1 &641104466
 GameObject:
   m_ObjectHideFlags: 0
@@ -2731,6 +2742,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   facingRight: 1
   maxSpeed: 4
+  Luna: {fileID: 0}
 --- !u!58 &1947661234
 CircleCollider2D:
   m_ObjectHideFlags: 0
