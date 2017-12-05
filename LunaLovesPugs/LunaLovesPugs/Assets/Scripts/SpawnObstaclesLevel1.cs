@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnObstaclesLevel: MonoBehaviour {
+public class SpawnObstaclesLevel1: MonoBehaviour {
 
 	public int maxObjects = 15;
 
