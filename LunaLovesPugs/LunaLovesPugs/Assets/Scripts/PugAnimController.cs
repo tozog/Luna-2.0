@@ -6,7 +6,7 @@ public class PugAnimController : MonoBehaviour {
 
 	private bool isGrounded = false;
 	[HideInInspector] public bool jump = false;
-	float jumpTime, jumpDelay = 0.5f;
+	float jumpTime;
 	Animator anim;
 
 	// Use this for initialization

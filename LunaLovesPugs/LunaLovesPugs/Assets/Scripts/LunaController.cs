@@ -6,14 +6,14 @@ public class LunaController : MonoBehaviour {
 
 	[HideInInspector] public bool jump = false;
 	public float moveForce = 365f;
-	public float maxSpeed = 6f;
+	public float maxSpeed;
 	public float jumpForce = 500f;
 	public int xPOS;
 	public int yPOS;
 	private Rigidbody2D rb2d;
 	public GameObject Luna;
 	private bool isGrounded = false;
-	float jumpTime, jumpDelay = 0.5f;
+	float jumpTime;
 	bool jumped;
 
 	Animator anim;

@@ -19,12 +19,13 @@ public class BadGuyController : MonoBehaviour {
 		Vector2 pos = transform.position;
 
 		int lunaPos = GameObject.Find ("Luna").GetComponent<LunaController> ().xPOS;
+		//int lunaSpeed = GameObject.Find ("Pug").GetComponent<PugObjectCollision> ().currentSpeed;
 		if ((int)pos.x == lunaPos || (int)pos.x > lunaPos) {
 			maxSpeed = 0f;
 		} else {
 			maxSpeed = 5f;
 			if (pos.x < (lunaPos - 25)) {
-				maxSpeed = 7f;
+				maxSpeed = 10f;
 			} else if (pos.x >= (lunaPos - 10)) {
 				maxSpeed = 5f;
 			}
