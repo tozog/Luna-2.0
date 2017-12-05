@@ -21,15 +21,15 @@ public class SpawnObjContin : MonoBehaviour {
 	public GameObject pumpkin;
 
 	//How far we can move the objects from one another.
-	public float horizontalMin;
-	public float horizontalMax;
-	public float verticalMin;
-	public float verticalMax;
+	private float horizontalMin = 15f;
+	private float horizontalMax = 20f;
+	private float verticalMin = 13f;
+	private float verticalMax = 14f;
 
 	private Vector2 originPosition;
 	public GameObject Luna;
-	float posMin = 250.0f;
-	float posMax = 300.0f;
+	private float posMin = 100.0f;
+	private float posMax = 110.0f;
 
 	// Use this for initialization
 	void Start () {
@@ -41,8 +41,8 @@ public class SpawnObjContin : MonoBehaviour {
 	{
 		if(Luna.transform.position.x >= posMin && Luna.transform.position.x <= posMax) {
 			//maxPlatforms += 50;
-			posMin += 250.0f;
-			posMax += 250.0f;
+			posMin += 100.0f;
+			posMax += 100.0f;
 			Spawn();
 		}
 	}

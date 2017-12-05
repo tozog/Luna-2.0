@@ -24,6 +24,9 @@ public class PugAnimController : MonoBehaviour {
 				anim.SetTrigger("Land");
 			}
 		}
+		if (other.gameObject.CompareTag ("BadPickUp")) {
+			anim.SetTrigger("Hurt");
+		}
 	}
 
 	// Update is called once per frame
