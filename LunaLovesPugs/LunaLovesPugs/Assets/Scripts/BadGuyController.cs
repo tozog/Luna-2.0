@@ -6,8 +6,12 @@ using System;
 public class BadGuyController : MonoBehaviour {
 
 	[HideInInspector] public bool facingRight = true;
-	public float maxSpeed = 5;
+	public float maxSpeed;
 	private Rigidbody2D rb2d;
+	
+	public GameObject Luna;
+	private float posMin = 100.0f;
+	private float posMax = 110.0f;
 
 	void Awake ()
 	{
@@ -30,9 +34,6 @@ public class BadGuyController : MonoBehaviour {
 				maxSpeed = 5f;
 			}
 		}
-
-	//	int lunaPosY = GameObject.Find ("Luna").GetComponent<LunaController> ().yPOS;
-	//	pos.y = lunaPosY+1;
 
 		pos.x += maxSpeed * Time.deltaTime;
 		transform.position = pos;

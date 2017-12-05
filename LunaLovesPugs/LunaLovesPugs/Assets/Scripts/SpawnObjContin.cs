@@ -40,7 +40,6 @@ public class SpawnObjContin : MonoBehaviour {
 	void Update()
 	{
 		if(Luna.transform.position.x >= posMin && Luna.transform.position.x <= posMax) {
-			//maxPlatforms += 50;
 			posMin += 100.0f;
 			posMax += 100.0f;
 			Spawn();

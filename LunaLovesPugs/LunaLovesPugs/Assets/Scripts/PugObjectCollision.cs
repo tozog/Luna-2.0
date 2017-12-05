@@ -12,11 +12,11 @@ public class PugObjectCollision : MonoBehaviour {
 		float currentSpeed = GameObject.Find ("Luna").GetComponent<LunaController> ().maxSpeed;
 		if (other.gameObject.CompareTag ("GoodPickUp")) {
 			Destroy (other.gameObject);
-			if (currentSpeed == 15) {
+			if (currentSpeed == 7) {
 				GameObject.Find ("Luna").GetComponent<LunaController> ().maxSpeed = (currentSpeed);
 			}
 			else {
-				GameObject.Find ("Luna").GetComponent<LunaController> ().maxSpeed = (currentSpeed + 1);
+				GameObject.Find ("Luna").GetComponent<LunaController> ().maxSpeed = (currentSpeed + 0.5f);
 			}
 		}
 		else if (other.gameObject.CompareTag ("BadPickUp")) {
