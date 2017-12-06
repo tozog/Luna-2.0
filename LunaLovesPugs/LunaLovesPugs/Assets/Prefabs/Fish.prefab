@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4442869469003802}
   - component: {fileID: 212799350912046802}
   - component: {fileID: 50442160338868484}
-  - component: {fileID: 61263620842827828}
+  - component: {fileID: 60497043036737656}
   m_Layer: 10
   m_Name: Fish
   m_TagString: GoodPickUp
@@ -92,8 +92,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!61 &61263620842827828
-BoxCollider2D:
+--- !u!60 &60497043036737656
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -104,7 +104,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0233742, y: -0.044623375}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -114,9 +114,28 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.72075295, y: 0.43125534}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.16499999, y: -0.03}
+      - {x: 0.24499999, y: -0.12}
+      - {x: 0.275, y: -0.13}
+      - {x: 0.355, y: -0.14}
+      - {x: 0.36499998, y: -0.12}
+      - {x: 0.405, y: -0.049999997}
+      - {x: 0.405, y: 0.11}
+      - {x: 0.355, y: 0.12}
+      - {x: 0.265, y: 0.11}
+      - {x: 0.16499999, y: 0.29}
+      - {x: -0.105, y: 0.29}
+      - {x: -0.265, y: 0.14}
+      - {x: -0.345, y: 0.049999997}
+      - {x: -0.385, y: 0.01}
+      - {x: -0.405, y: -0.07}
+      - {x: -0.405, y: -0.29}
+      - {x: -0.085, y: -0.29}
+      - {x: 0.125, y: -0.17}
+      - {x: 0.21499999, y: -0.11}
+      - {x: 0.205, y: -0.08}
 --- !u!212 &212500324129115854
 SpriteRenderer:
   m_ObjectHideFlags: 1

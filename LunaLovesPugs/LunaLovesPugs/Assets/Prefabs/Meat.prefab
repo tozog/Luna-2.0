@@ -37,7 +37,7 @@ GameObject:
   - component: {fileID: 4810500601632346}
   - component: {fileID: 212857133409646888}
   - component: {fileID: 50801178230934430}
-  - component: {fileID: 58919745506443312}
+  - component: {fileID: 60911140119172360}
   m_Layer: 0
   m_Name: Meat
   m_TagString: GoodPickUp
@@ -92,8 +92,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &58919745506443312
-CircleCollider2D:
+--- !u!60 &60911140119172360
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -104,9 +104,31 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.02549941, y: -0.11354977}
-  serializedVersion: 2
-  m_Radius: 0.2721722
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.71, y: 0.79}
+    newSize: {x: 0.71, y: 0.79}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.355, y: 0.285}
+      - {x: 0.255, y: 0.39499998}
+      - {x: 0.035, y: 0.39499998}
+      - {x: 0.024999999, y: 0.295}
+      - {x: -0.235, y: 0.185}
+      - {x: -0.355, y: 0.114999995}
+      - {x: -0.355, y: -0.21499999}
+      - {x: -0.24499999, y: -0.285}
+      - {x: -0.044999998, y: -0.39499998}
+      - {x: 0.195, y: -0.39499998}
+      - {x: 0.325, y: -0.265}
+      - {x: 0.295, y: 0.074999996}
+      - {x: 0.355, y: 0.114999995}
 --- !u!212 &212053759907624632
 SpriteRenderer:
   m_ObjectHideFlags: 1
