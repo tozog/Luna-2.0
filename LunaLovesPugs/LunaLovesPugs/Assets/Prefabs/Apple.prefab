@@ -36,8 +36,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4038703190371710}
   - component: {fileID: 212079515801065948}
-  - component: {fileID: 58395761908160004}
   - component: {fileID: 50179094121423648}
+  - component: {fileID: 60768754437343080}
   m_Layer: 0
   m_Name: Apple
   m_TagString: GoodPickUp
@@ -92,8 +92,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!58 &58395761908160004
-CircleCollider2D:
+--- !u!60 &60768754437343080
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -104,9 +104,35 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.43, y: -0.15}
-  serializedVersion: 2
-  m_Radius: 0.19779557
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.34, y: 0.74}
+    newSize: {x: 1.34, y: 0.74}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.21, y: 0.24}
+      - {x: -0.24, y: 0.29999998}
+      - {x: -0.37, y: 0.29999998}
+      - {x: -0.53, y: 0.26}
+      - {x: -0.61, y: 0.22}
+      - {x: -0.66999996, y: 0.14999999}
+      - {x: -0.66999996, y: -0.29999998}
+      - {x: -0.56, y: -0.37}
+      - {x: -0.26999998, y: -0.37}
+      - {x: -0.16, y: -0.31}
+      - {x: -0.16, y: 0}
+      - {x: -0.19, y: 0.03}
+    - - {x: 0.64, y: 0.37}
+      - {x: 0.64, y: 0.35}
+      - {x: 0.65999997, y: 0.32999998}
+      - {x: 0.66999996, y: 0.32999998}
+      - {x: 0.66999996, y: 0.37}
 --- !u!212 &212079515801065948
 SpriteRenderer:
   m_ObjectHideFlags: 1

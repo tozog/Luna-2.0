@@ -37,7 +37,7 @@ GameObject:
   - component: {fileID: 4283346355089382}
   - component: {fileID: 212336201212971868}
   - component: {fileID: 50144806463209438}
-  - component: {fileID: 58577518633415704}
+  - component: {fileID: 60519138556482666}
   m_Layer: 0
   m_Name: Pumpkin
   m_TagString: GoodPickUp
@@ -92,8 +92,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!58 &58577518633415704
-CircleCollider2D:
+--- !u!60 &60519138556482666
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -105,8 +105,27 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.35
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.7, y: 0.7}
+    newSize: {x: 0.7, y: 0.7}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.14, y: 0.35}
+      - {x: -0.22999999, y: 0.32}
+      - {x: -0.35, y: 0.14}
+      - {x: -0.35, y: -0.16}
+      - {x: -0.32999998, y: -0.26}
+      - {x: -0.14, y: -0.35}
+      - {x: 0.26, y: -0.35}
+      - {x: 0.32, y: -0.29}
+      - {x: 0.35, y: -0.19}
+      - {x: 0.35, y: 0.35}
 --- !u!212 &212336201212971868
 SpriteRenderer:
   m_ObjectHideFlags: 1

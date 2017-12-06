@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4139920559392430}
   - component: {fileID: 212760808644614622}
   - component: {fileID: 50670212505112140}
-  - component: {fileID: 61277462056061050}
+  - component: {fileID: 60398110425612604}
   m_Layer: 0
   m_Name: Chocolate
   m_TagString: BadPickUp
@@ -51,27 +51,27 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1080501666772672}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.2588191, w: 0.9659258}
   m_LocalPosition: {x: 5.632194, y: 10, z: 0}
   m_LocalScale: {x: 0.32182994, y: 0.32182994, z: 1}
   m_Children:
   - {fileID: 4946742129209888}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30}
 --- !u!4 &4946742129209888
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1338074165818788}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.258819, w: 0.9659259}
   m_LocalPosition: {x: 1.88, y: 2.29, z: 0}
   m_LocalScale: {x: 0.36, y: 0.36, z: 1}
   m_Children: []
   m_Father: {fileID: 4139920559392430}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -30}
 --- !u!50 &50670212505112140
 Rigidbody2D:
   serializedVersion: 4
@@ -92,8 +92,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!61 &61277462056061050
-BoxCollider2D:
+--- !u!60 &60398110425612604
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -104,7 +104,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.030686855, y: -0.107402086}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -114,9 +114,14 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 4.956661, y: 3.6371484}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 2.4816723, y: -0.35387176}
+      - {x: 1.052268, y: -2.0804029}
+      - {x: -2.5084426, y: 0.05011017}
+      - {x: -2.437332, y: 0.49234435}
+      - {x: -1.1138315, y: 1.7435095}
+      - {x: 2.2936358, y: -0.040109254}
 --- !u!212 &212727985962345744
 SpriteRenderer:
   m_ObjectHideFlags: 1
